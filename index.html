@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact login</title>
+    <!-- Style Sheet Link -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Font Awesome Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <!-- Container -->
+    <form action="" class="container">
+      <!-- Grid -->
+      <div class="grid grid--1x2 card">
+        <div class="login__image">
+          <picture>
+            <source
+              type="image/png"
+              srcset="images/contact.png 1x, images/contact@2x.png 2x"
+            />
+            <img src="images/contact.png" alt="" />
+          </picture>
+        </div>
+        <div class="login__content">
+          <div class="login__header">
+            <h2 class="login__heading">Sign In</h2>
+            <p class="login__description">
+              Welcome back, Please login to your account.
+            </p>
+          </div>
+          <div class="login__body">
+            <div class="login__input">
+              <div>
+                <input
+                  class="input"
+                  type="email"
+                  name="email"
+                  autocomplete="on"
+                  placeholder="Enter username"
+                  required
+                />
+              </div>
+              <div class="login__password">
+                <input
+                  class="input"
+                  id="input-pass"
+                  type="password"
+                  name="password"
+                  autocomplete="on"
+                  placeholder="Password"
+                  minlength="7"
+                  maxlength="20"
+                  required
+                />
+                <i
+                  class="fa-regular fa-eye-slash login__eye"
+                  id="input-icon"
+                ></i>
+              </div>
+            </div>
+            <p class="login__forget-password">Forget Password</p>
+            <div><button class="login__btn">Log in</button></div>
+          </div>
+          <div class="login__footer">
+            <div class="login__continue">
+              <div class="login__line"></div>
+              <p class="login__continue-tagline">Or continue with</p>
+              <div class="login__line"></div>
+            </div>
+            <div class="login__link">
+              <a href=""><i class="icon fa-brands fa-google"></i></i></a>
+              <a href=""><i class="icon fa-brands fa-apple"></i></i></a>
+              <a href=""><i class="icon fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+    <!-- JavaScript Link -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
